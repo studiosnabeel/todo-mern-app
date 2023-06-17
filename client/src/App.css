@@ -13,7 +13,10 @@
   font-size: x-large;
   font-weight: 700;
   letter-spacing: 3px;
-  color: rgb(38, 38, 38);
+  background: linear-gradient(to top, teal, orange);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .form-container {
