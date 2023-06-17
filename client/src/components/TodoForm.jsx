@@ -2,11 +2,9 @@ import React from 'react';
 
 const TodoForm = () => {
   return (
-    <div className="form-container">
-      <form>
-        <input type="text" />
-      </form>
-    </div>
+    <form className="form-container">
+      <input className="form-input" type="text" placeholder="Add tasks" />
+    </form>
   );
 };
 
