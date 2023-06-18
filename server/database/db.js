@@ -1,8 +1,12 @@
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+
+dotenv.config();
+const username = process.env.USER_ID;
+const password = process.env.PASSWORD;
 
 const connection = () => {
-  
-  const MONGO ='mongodb+srv://todolist:todolist@todos.4sloovf.mongodb.net/?retryWrites=true&w=majority'
+  const MONGO = `mongodb+srv://${username}:${password}@todos.4sloovf.mongodb.net/?retryWrites=true&w=majority`;
 
   mongoose.connect(MONGO, {
     useNewUrlParser: true,
