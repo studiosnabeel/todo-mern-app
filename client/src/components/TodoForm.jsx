@@ -4,7 +4,6 @@ const TodoForm = () => {
   const [text, setText] = useState('');
   const handleSubmit = () => {};
   const handleChange = (e) => {
-    e.preventDefault();
     setText(e.target.value);
   };
   return (
